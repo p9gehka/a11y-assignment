@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
     inputBtnDecrease.addEventListener('click', () => {
       const initialValue = inputField.value * 1;
       if (initialValue > 1) inputField.value = initialValue - 1;
-    });    
+    });
   });
 
   const accordions = document.querySelectorAll('.accordion__item');
@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
       } else {
         title.setAttribute('aria-expanded', 'false');   
       }
-    });    
+    });
   });
 
   const modalTarget = document.querySelectorAll('.modal-target');
@@ -55,6 +55,4 @@ window.addEventListener("DOMContentLoaded", () => {
   const showModal = (modalWindow) => {
     modalWindow.classList.add('show-modal');
   }
-
-
 })

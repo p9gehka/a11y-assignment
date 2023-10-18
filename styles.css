@@ -23,9 +23,9 @@
 }
 
 :root {
-  --text-color-primary: #717b90;
+  --text-color-primary: #373d4b;
   --text-color-light: #5e626b;
-  --link-color-primary: #b4bac4;
+  --link-color-primary: #2d394c;
   --border-color-primary: #1a1f29;
   --border-color-light: #cccccc;
   --brand-blue: #171c8f;
@@ -107,14 +107,6 @@ fieldset legend {
   padding: 0;
 }
 
-.v-h {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
 
 .container {
   width: 100%;
@@ -402,7 +394,7 @@ fieldset legend {
     max-width: 100%;
     padding-left: 0;
     text-align: center;
-  }    
+  }
 }
 
 .footer__copyright {
@@ -758,8 +750,6 @@ fieldset legend {
   padding: 10px;
 }
 
-
-
 .product-card__infolabel {
   font-size: 16px;
   line-height: 1.4;
@@ -853,42 +843,6 @@ fieldset legend {
   display: inline-flex;
   cursor: pointer;
   overflow: hidden;
-}
-
-.input-radio-size {
-  border: 1px var(--border-color-light) solid;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  line-height: 1;
-  letter-spacing: -0.025em;
-  color: var(--text-color-primary);
-}
-
-.input-radio__input:checked + .input-radio-size {
-  border-color: var(--border-color-primary);
-}
-
-.input-radio__input:hover + .input-radio-size {
-  background-color: rgba(0, 0, 0, 0.03);
-}
-
-.input-radio__input:disabled + .input-radio-size {
-  border: none;
-  background-color: #f2f2f2;
-  color: #bdbdbd;
-  cursor: default;
-}
-
-.input-radio__input:disabled + .input-radio-size::after {
-  content: "";
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 200%;
-  height: 1px;
-  border-top: 1px var(--border-color-light) solid;
-  transform: rotate(-45deg) translate(-50%, 50%);
 }
 
 .input-radio-color {
