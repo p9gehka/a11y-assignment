@@ -11,41 +11,39 @@
 	<body>
 		<div class="main-grid">
 			<div class="header">
-				<div class="container header__container">
-					<div class="header__menu-main" aria-label="Primary">
-						<ul class="menu">
-							<li class="menu__item">
-								<a class="menu__link" href="#">Women</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Men</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Kids</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Company</a>
-							</li>
-							<li class="header__logo">
-								<a  href="/" >
-									<img class="header__logo-picture" src="images/logo.svg" aria-label="Susparsa logo">
-								</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Account</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Search</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Cart (0)</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<header class="container header__container" aria-label="Primary">
+					<ul class="menu">
+						<li class="menu__item">
+							<a class="menu__link" href="#">Women</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Men</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Kids</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Company</a>
+						</li>
+						<li class="header__logo">
+							<a  href="/" >
+								<img class="header__logo-picture" src="images/logo.svg" aria-label="Susparsa logo">
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Account</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Search</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Cart (0)</a>
+						</li>
+					</ul>
+				</header >
 			</div>
 
-			<div class="page-content">
+			<main class="page-content">
 				<div class="container">
 					<div>
 						<ul class="breadcrumbs">
@@ -112,52 +110,40 @@
 								<fieldset class="product-card__parameter">
 									<legend class="product-card__label">Color<span aria-hidden="true"> - <span id="productColorValue">White</span></span></legend>
 									<ul class="input-group">
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="White" value="white" checked aria-label="white">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #ffffff; border: 1px #cccccc solid;"></span>
-												</span>
+										<li class="input-group__item input-radio">
+											<input class="input-radio__input" type="radio" name="product_color" data-name-display="White" value="white" checkedtitle="white" id="input-color-white">
+											<label class="input-radio__visual input-radio-color" for="input-color-white">
+												<span class="input-radio-color__sample" style="background-color: #ffffff; border: 1px #cccccc solid;">white</span>
 											</label>
 										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Black" value="black" aria-label="black">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #1a1f29;"></span>
-												</span>
+										<li class="input-group__item input-radio">
+											<input class="input-radio__input" type="radio" name="product_color" data-name-display="Black" value="black" title="black" id="input-color-black">
+											<label class="input-radio__visual input-radio-color" for="input-color-black">
+												<span class="input-radio-color__sample" style="background-color: #1a1f29;">black</span>
 											</label>
 										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Gray" value="gray" aria-label="gray">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #aeaeb0;"></span>
-												</span>
+										<li class="input-group__item input-radio">
+											<input class="input-radio__input" type="radio" name="product_color" data-name-display="Gray" value="gray" title="gray" id="input-color-gray">
+											<label class="input-radio__visual input-radio-color" for="input-color-gray">
+												<span class="input-radio-color__sample" style="background-color: #aeaeb0;">gray</span>
 											</label>
 										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Purple latte" value="purple" aria-label="purple">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #ba9be5;"></span>
-												</span>
+										<li class="input-group__item input-radio">
+											<input class="input-radio__input" type="radio" name="product_color" data-name-display="Purple latte" value="purple" title="purple" id="input-color-purple">
+											<label class="input-radio__visual input-radio-color" for="input-color-purple">
+												<span class="input-radio-color__sample" style="background-color: #ba9be5;">purple</span>
 											</label>
 										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Color 1" value="color1" disabled aria-label="color1">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #e9a0a7;"></span>
-												</span>
+										<li class="input-group__item input-radio">
+											<input class="input-radio__input" type="radio" name="product_color" data-name-display="Color 1" value="color1" disabled title="color1"  id="input-color-color1">
+											<label class="input-radio__visual input-radio-color" for="input-color-color1">
+												<span class="input-radio-color__sample" style="background-color: #e9a0a7;">color1</span>
 											</label>
 										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Color 2" value="color2" disabled aria-label="color2">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #f8cab1;"></span>
-												</span>
+										<li class="input-group__item input-radio">
+											<input class="input-radio__input" type="radio" name="product_color" data-name-display="Color 2" value="color2" disabled title="color2" id="input-color-color2">
+											<label class="input-radio__visual input-radio-color" for="input-color-color2">
+												<span class="input-radio-color__sample" style="background-color: #f8cab1;">color2</span>
 											</label>
 										</li>
 									</ul>
@@ -171,7 +157,7 @@
 									</div>
 								</div>
 								<button class="btn btn_secondary btn_hollow">Add to cart</button>
-								<button class="btn btn_primary">Buy it now</button>
+								<button type="submit" class="btn btn_primary">Buy it now</button>
 							</form>
 							<div class="product-card__description">
 								<p>A unisex basic garment with a loose fit. Light and comfortable to your skin.</p>
@@ -182,30 +168,33 @@
 							<div class="product-card__photo-big">
 								<img class="product-card__photo-big-picture" src="images/photo1.jpg" srcset="images/photo1_x2.jpg 2x" alt="Product photo big picture">
 							</div>
-							<div class="accordion" aria-label="Product info">
+							<div role="region" class="accordion" aria-label="Product info">
 								<div class="accordion__item">
-									<h2 id="productInfo1">
-										<button aria-controls="productInfo1Body" class="accordion__item-title" >Sizing & Fit</button>
+									<h2>
+										<button type="button" aria-controls="productInfo1Body" id="productInfo1" class="accordion__item-title" >Sizing & Fit</button>
 									</h2>
-									<div class="accordion__item-body" id="productInfo1Body">Olga is 175cm, she is wearing a size S.</div>
-								</div>
-								<div class="accordion__item">
-									<h2 id="productInfo1">
-										<button aria-controls="productInfo2Body" class="accordion__item-title">Composition & Care</button>
-									</h2>
-									<div class="accordion__item-body" id="productInfo2Body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+									<div class="accordion__item-body" role="region"
+ id="productInfo1Body" aria-labelledby="productInfo1">>Olga is 175cm, she is wearing a size S.</div>
 								</div>
 								<div class="accordion__item">
 									<h2>
-										<button type="button" aria-controls="productInfo3Body" class="accordion__item-title">Delivery & Returns</button>
+										<button type="button" aria-controls="productInfo2Body" id="productInfo2"  class="accordion__item-title">Composition & Care</button>
 									</h2>
-									<div class="accordion__item-body" id="productInfo3Body" aria-labelledby="productInfo3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+									<div class="accordion__item-body" role="region"
+ id="productInfo2Body" aria-labelledby="productInfo2">>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+								</div>
+								<div class="accordion__item">
+									<h2>
+										<button type="button" aria-controls="productInfo3Body" id="productInfo3" class="accordion__item-title">Delivery & Returns</button>
+									</h2>
+									<div class="accordion__item-body" role="region"
+ id="productInfo3Body" aria-labelledby="productInfo3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="section" aria-labelledby="labelProductsSimiilar">
+					<div class="section">
 						<h2 class="heading-2 products-similar__heading-2">Video about the product</h2>
 						<div class="product-video_container">
 							<iframe width="100%" height="500" src="https://www.youtube.com/embed/9XDvpm7sLVg?si=clINFdoVQuk20KPS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -298,9 +287,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</main>
 
-			<div class="footer">
+			<footer class="footer">
 				<div class="container footer__container">
 					<div class="footer__columns">
 						<section class="footer__col">
@@ -345,7 +334,7 @@
 									<li class="footer__list-item">
 										<a class="footer__list-link" href="#">Our Materials</a>
 									</li>
-								</ul>
+								</ul> 
 							</nav>
 						</section>
 						<section class="footer__col">
@@ -372,20 +361,20 @@
 						</section>
 						<section class="footer__col">
 							<h4 class="footer__heading">Subscribe</h4>
-							<form class="form" action="#">
+							<form class="form" action="#" aria-label="Subscribe">
 								<div class="form__input-group">
-								<input class="input" type="email" name="email" id="email" placeholder="Email">
-								<button class="btn btn_primary">Subscribe</button>
+									<input class="input" type="email" name="email" id="email" placeholder="Email" title="email">
+									<button type="submit" class="btn btn_primary" id="subscribe-button">Subscribe</button>
 								</div>
 								<label class="form__input-group">
 									<input class="checkbox" type="checkbox" name="agree" id="agree"> I agree to give you all my data
-								</label>
+								</label>	
 							</form>
 						</section>
 					</div>
 					<small class="footer__copyright">© Susparsa 2021</small>
 				</div>
-			</div>
+			</footer>
 		</div>
 
 		<script src="scripts.js"></script>

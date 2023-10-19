@@ -37,7 +37,6 @@
 
 a {
   text-decoration: none;
-  outline: none;
 }
 
 p {
@@ -84,7 +83,6 @@ button {
   background: none;
   padding: 0;
   margin: 0;
-  outline: none;
 }
 
 button {
@@ -194,12 +192,6 @@ fieldset legend {
   border-bottom: 1px var(--border-color-light) solid;
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .header__logo {
   display: block;
   margin-top: -5px;
@@ -211,9 +203,6 @@ fieldset legend {
   width: 100%;
 }
 
-.header__menu-main {
-  width: 100%;
-}
 
 .menu {
   display: flex;
@@ -257,16 +246,8 @@ fieldset legend {
 }
 
 @media (max-width: 768px) {
-  .header__menu-main {
-    display: none;
-  }
-
-  .header__menu-secondary {
-    display: none;
-  }
-
   .header__container {
-    justify-content: center;
+    display: none;
   }
 }
 
@@ -559,7 +540,6 @@ fieldset legend {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  outline: none;
 }
 
 .product-card__left {
@@ -881,6 +861,8 @@ fieldset legend {
   width: 100%;
   height: 100%;
   display: block;
+  overflow: hidden;
+  color: transparent;
 }
 
 .heading-2 {
