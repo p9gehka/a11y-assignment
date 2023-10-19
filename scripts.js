@@ -55,4 +55,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const showModal = (modalWindow) => {
     modalWindow.classList.add('show-modal');
   }
+
+  var rg1 = new RadioGroup(document.getElementById('product-color-input-group'));
 })
