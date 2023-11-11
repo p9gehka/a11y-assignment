@@ -28,33 +28,20 @@ window.addEventListener("DOMContentLoaded", () => {
     accordionTitle.addEventListener('click', () => {
       accordion.classList.toggle('accordion__item_active');
       const title = accordion.querySelector('.accordion__item-title');
-      if (accordion.classList.contains('accordion__item_active')) {
-        title.setAttribute('aria-expanded', 'true');
-      } else {
-        title.setAttribute('aria-expanded', 'false');   
-      }
+      title.setAttribute('aria-expanded', `${accordion.classList.contains('accordion__item_active')}`);
     });
   });
 
-  const modalTarget = document.querySelectorAll('.modal-target');
-  modalTarget.forEach((modalTarget)=> {
-    modalTarget.addEventListener('click', ()=>{
-      const modalWindow = document.querySelector('.modal');
-      showModal(modalWindow);
-    });
-  });
-  const modalBackdrop = document.querySelectorAll('.modal-backdrop');
-  modalBackdrop.forEach((modalBackdrop)=> {
-    modalBackdrop.addEventListener('click', (e) => {
+  const modal = document.querySelector('.modal');
+  document.querySelector('.modal-target').addEventListener('click', showModal);
+  document.querySelector('.modal-backdrop').addEventListener('click', closeModal);
 
-      const modalWindow = e.target.closest('.modal');
-      modalWindow.classList.remove('show-modal');
-    });
-  });
-
-  const showModal = (modalWindow) => {
-    modalWindow.classList.add('show-modal');
+  modal.addEventListener('transitionend', showModal)
+  function showModal() {
+    modal.classList.add('show-modal');
+    document.querySelector('.modal-body').focus();
   }
-
-  var rg1 = new RadioGroup(document.getElementById('product-color-input-group'));
+  function closeModal() {
+   modal.classList.remove('show-modal');
+  }
 })

@@ -191,9 +191,10 @@ fieldset legend {
 
 .form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 20px;
 }
+
 .form__input-group {
   display: flex;
   gap: 10px;
@@ -256,6 +257,11 @@ fieldset legend {
   .menu__link {
     font-size: 14px;
   }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -728,6 +734,19 @@ fieldset legend {
   flex-direction: column;
   gap: 20px;
   border-radius: 2px;
+}
+
+.show-modal .modal-body:not(:focus-within) {
+  background-color: rgb(255, 255, 254);
+  transition: background-color 0.01s;
+}
+
+.close-button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 4px;
+  top: 4px;
 }
 
 .show-modal {
